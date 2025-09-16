@@ -1,0 +1,15 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.4.0
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: ianthomas23@gmail.com
+author_name: Ian Thomas
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: terminal-external-command
+project_short_description: A JupyterLite extension containing a terminal external
+    command
+python_name: terminal_external_command
+repository: https://github.com/ianthomas23/terminal-external-command
+test: true
+
