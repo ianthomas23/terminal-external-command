@@ -6,11 +6,13 @@ import {
 import { ExitCode, IExternalRunContext } from '@jupyterlite/cockle';
 import { ILiteTerminalAPIClient } from '@jupyterlite/terminal';
 
-async function myExternalCommand(context: IExternalRunContext): Promise<number> {
+async function myExternalCommand(
+  context: IExternalRunContext
+): Promise<number> {
   const { args, stdout } = context;
-  stdout.write("Running external command\n");
+  stdout.write('Running external command\n');
   if (args.length > 0) {
-    stdout.write("  arguments: " + args.join(" ") + "\n");
+    stdout.write('  arguments: ' + args.join(' ') + '\n');
   }
   return ExitCode.SUCCESS;
 }
@@ -32,7 +34,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     liteTerminalAPIClient.registerExternalCommand({
       name: 'my-ext',
       command: myExternalCommand
-    })
+    });
   }
 };
 

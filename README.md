@@ -26,6 +26,7 @@ copier copy --trust https://github.com/jupyterlab/extension-template .
 ```
 
 Answers to the `copier` questions:
+
 1. Extension kind = frontend
 2. Extension author name = Ian Thomas
 3. Extension author email = ianthomas23@gmail.com
@@ -38,6 +39,7 @@ Answers to the `copier` questions:
 10. Git repo URL = https://github.com/ianthomas23/terminal-external-command
 
 Commit the initial project using:
+
 ```bash
 git init
 git add .
@@ -114,13 +116,13 @@ done and to demonstrate the command works.
    npx static-handler _output/
    ```
 6. Use the deployment:
-    - Navigate in a web browser to http://localhost:8080.
-    - To confirm that the command is available and runs correctly, open a terminal and run
-      `cockle-config command my-ext`; you can use tab completion for this. This will show that the
-      `my-ext` command is registered and is an external command.
-    - You can list all available commands by pressing the tab key at an empty prompt.
-    - Run the `my-ext` command, again using tab completion if you wish. The command writes a message
-      to the terminal and also writes any arguments passed to the command.
+   - Navigate in a web browser to http://localhost:8080.
+   - To confirm that the command is available and runs correctly, open a terminal and run
+     `cockle-config command my-ext`; you can use tab completion for this. This will show that the
+     `my-ext` command is registered and is an external command.
+   - You can list all available commands by pressing the tab key at an empty prompt.
+   - Run the `my-ext` command, again using tab completion if you wish. The command writes a message
+     to the terminal and also writes any arguments passed to the command.
 
 <img alt="Screenshot" src="screenshot.png">
 
