@@ -123,3 +123,8 @@ dmypy.json
 
 # Yarn cache
 .yarn/
+
+deploy/.jupyterlite.doit.db
+deploy/_output/
+deploy/cockle-config.json
+deploy/cockle_wasm_env/
