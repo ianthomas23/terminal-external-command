@@ -11,7 +11,7 @@ example of a JavaScript command that runs in the `cockle` Web Worker and does ha
 the Emscripten file system see
 [terminal-javascript-command](https://github.com/ianthomas/terminal-javascript-command) instead.
 
-## Instructions to recreate this repository
+## Instructions to recreate this repository
 
 ### Initial project
 
@@ -63,10 +63,11 @@ Follow these steps to add the new external command to the project:
    }
    ```
 4. Edit `src/index.ts` to add the basic external command functionality. This comprises:
-   a. Some imports from `@jupyterlite/cockle` and `@jupyterlite/terminal`.
-   b. The command itself in a new function called `myExternalCommand`.
-   c. Modify the `JupyterFrontEndPlugin` to register the external command with the
-      `ILiteTerminalAPIClient` with the name `my-ext`.
+   - Some imports from `@jupyterlite/cockle` and `@jupyterlite/terminal`.
+   - The command itself in a new function called `myExternalCommand`.
+   - Modify the `JupyterFrontEndPlugin` to register the external command with the
+     `ILiteTerminalAPIClient` with the name `my-ext`.
+
 5. Create a `micromamba` environment to build and deploy the extension:
    ```bash
    micromamba create -n terminal-external-command python nodejs
@@ -113,12 +114,12 @@ done and to demonstrate the command works.
    npx static-handler _output/
    ```
 6. Use the deployment:
-   a.  Navigate in a web browser to http://localhost:8080.
-   b. To confirm that the command is available and runs correctly, open a terminal and run
+    - Navigate in a web browser to http://localhost:8080.
+    - To confirm that the command is available and runs correctly, open a terminal and run
       `cockle-config command my-ext`; you can use tab completion for this. This will show that the
       `my-ext` command is registered and is an external command.
-   c. You can list all available commands by pressing the tab key at an empty prompt.
-   d. Run the `my-ext` command, again using tab completion if you wish. The command writes a message
+    - You can list all available commands by pressing the tab key at an empty prompt.
+    - Run the `my-ext` command, again using tab completion if you wish. The command writes a message
       to the terminal and also writes any arguments passed to the command.
 
 <img alt="Screenshot" src="screenshot.png">
