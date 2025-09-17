@@ -9,7 +9,7 @@ A `cockle` external command runs in the main UI thread and does not have direct 
 [Emscripten file system](https://emscripten.org/docs/api_reference/Filesystem-API.html). For an
 example of a JavaScript command that runs in the `cockle` Web Worker and does have direct access to
 the Emscripten file system see
-[terminal-javascript-command](https://github.com/ianthomas/terminal-javascript-command) instead.
+[terminal-javascript-command](https://github.com/ianthomas23/terminal-javascript-command) instead.
 
 ## Instructions to recreate this repository
 
