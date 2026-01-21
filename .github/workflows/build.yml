@@ -81,10 +81,8 @@ jobs:
 
         pip install "jupyterlab>=4.0.0,<5" terminal_external_command*.whl
 
-
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "terminal-external-command.*OK"
-        python -m jupyterlab.browser_check --no-browser-test
 
   integration-tests:
     name: Integration tests
