@@ -29,7 +29,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     _: JupyterFrontEnd,
     liteTerminalAPIClient: ILiteTerminalAPIClient
   ) => {
-    console.log('JupyterLab extension terminal-extension-cmd is activated!');
+    console.log('JupyterLite extension terminal-extension-command is activated');
 
     liteTerminalAPIClient.registerExternalCommand({
       name: 'my-ext',

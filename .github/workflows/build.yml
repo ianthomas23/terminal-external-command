@@ -116,7 +116,9 @@ jobs:
       env:
         YARN_ENABLE_IMMUTABLE_INSTALLS: 0
         PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: 1
-      run: jlpm install
+      run: |
+        jlpm install
+        jlpm build
 
     - name: Set up browser cache
       uses: actions/cache@v4
@@ -135,7 +137,7 @@ jobs:
     - name: Execute integration tests
       working-directory: ui-tests
       run: |
-        jlpm playwright test
+        jlpm test
 
     - name: Upload Playwright Test report
       if: always()
