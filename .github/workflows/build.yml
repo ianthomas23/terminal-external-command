@@ -85,7 +85,7 @@ jobs:
         sudo rm -rf $(which node)
         sudo rm -rf $(which node)
 
-        pip install terminal_external_command*.whl
+        pip install "jupyterlab>=4.0.0,<5" terminal_external_command*.whl
 
         jupyter labextension list
         jupyter labextension list 2>&1 | grep -ie "@jupyterlite/terminal.*OK"
