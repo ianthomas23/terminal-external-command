@@ -121,6 +121,9 @@ jobs:
         set -eux
         python -m pip install "jupyterlab>=4.0.0,<5" terminal_external_command*.whl
 
+    - name: Micromamba needed for cockle_wasm_env
+      uses: mamba-org/setup-micromamba@main
+
     - name: Install dependencies
       working-directory: ui-tests
       env:
