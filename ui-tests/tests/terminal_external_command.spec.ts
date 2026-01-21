@@ -1,11 +1,5 @@
 import { expect, test } from '@jupyterlab/galata';
 
-/**
- * Don't load JupyterLab webpage before running the tests.
- * This is required to ensure we capture all log messages.
- */
-test.use({ autoGoto: false });
-
 test('should emit an activation console message', async ({ page }) => {
   const logs: string[] = [];
 
@@ -17,7 +11,7 @@ test('should emit an activation console message', async ({ page }) => {
 
   expect(
     logs.filter(
-      s => s === 'JupyterLab extension terminal-external-command is activated!'
+      s => s === 'JupyterLite extension terminal-extension-command is activated'
     )
   ).toHaveLength(1);
 });
