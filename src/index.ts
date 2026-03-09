@@ -3,7 +3,8 @@ import {
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
-import { ExitCode, IExternalRunContext } from '@jupyterlite/cockle';
+import { ExitCode } from '@jupyterlite/cockle';
+import type { IExternalRunContext } from '@jupyterlite/cockle';
 import { ILiteTerminalAPIClient } from '@jupyterlite/terminal';
 
 async function myExternalCommand(
@@ -35,7 +36,8 @@ const plugin: JupyterFrontEndPlugin<void> = {
 
     liteTerminalAPIClient.registerExternalCommand({
       name: 'my-ext',
-      command: myExternalCommand
+      // Temporary cast here, needs fix to type of `ExternalEnvironment` in `cockle`.
+      command: myExternalCommand as any
     });
   }
 };

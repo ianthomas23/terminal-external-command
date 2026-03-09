@@ -72,9 +72,8 @@ Follow these steps to add the new external command to the project:
 
 5. Create a `micromamba` environment to build and deploy the extension:
    ```bash
-   micromamba create -n terminal-external-command python nodejs
+   micromamba create -n terminal-external-command jupyterlab jupyterlite-core python nodejs
    micromamba activate terminal-external-command
-   pip install jupyterlab jupyterlite-core
    ```
 6. Build the extension:
    ```bash
