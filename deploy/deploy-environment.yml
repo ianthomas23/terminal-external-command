@@ -1,0 +1,9 @@
+name: terminal-external-command
+channels:
+  - conda-forge
+dependencies:
+  - nodejs=24
+  - jupyter_server
+  - jupyterlite-terminal>=1.4.1
+  - jupyterlite-core
+  - jupyterlite-pyodide-kernel
