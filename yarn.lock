@@ -2839,9 +2839,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jupyterlite/cockle@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "@jupyterlite/cockle@npm:1.5.0"
+"@jupyterlite/cockle@npm:^1.5.1":
+  version: 1.5.1
+  resolution: "@jupyterlite/cockle@npm:1.5.1"
   dependencies:
     "@lumino/coreutils": ^2.2.0
     "@lumino/disposable": ^2.1.3
@@ -2850,7 +2850,7 @@ __metadata:
     deepmerge-ts: ^7.1.4
     rimraf: ^6.0.1
     zod: ^3.23.8
-  checksum: 7e64d221cafac0fd1bafad971db2fa0560ac4104fbe635a6ac8666b4b8bf24ae5d715a2b428b5592bf64abf2b5a51fcc639e82ec71ea9b1480b49bd2fa74fee9
+  checksum: 98e9c6031f7541609c9eab8ba6a4f35b3ae93f094479988afe5c828bc17ef13a82b15e8affe13fee0f32c4aec5ade187687456a51a5fddaa22d72bd6836ad9db
   languageName: node
   linkType: hard
 
@@ -2891,9 +2891,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jupyterlite/terminal@npm:^1.4.0":
-  version: 1.4.0
-  resolution: "@jupyterlite/terminal@npm:1.4.0"
+"@jupyterlite/terminal@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "@jupyterlite/terminal@npm:1.4.1"
   dependencies:
     "@jupyterlab/apputils": ^4.6.0
     "@jupyterlab/coreutils": ^6.5.0
@@ -2901,12 +2901,12 @@ __metadata:
     "@jupyterlab/services": ^7.5.0
     "@jupyterlab/settingregistry": ^4.5.0
     "@jupyterlite/apputils": ^0.7.0
-    "@jupyterlite/cockle": ^1.5.0
+    "@jupyterlite/cockle": ^1.5.1
     "@jupyterlite/services": ^0.7.0
     "@lumino/coreutils": ^2.2.1
     "@lumino/signaling": ^2.1.4
     mock-socket: ^9.3.1
-  checksum: c062f7677220df7ea625c95726c75552547e4e944d6753b4c256ebb1e035cbee2d68bb2b1756eba7a6915524c2cd6acf6dbef0de2bc8c05b0d05eed068c4d5be
+  checksum: 1452a084ccbe2c39dfeea4c8b6951134bec23d682b55cf890bdd4aac442d60d0f601d4d1d058ea9713399359fea63d379e319c2e3ddb0672f0ea901c1fe29d4b
   languageName: node
   linkType: hard
 
@@ -10283,8 +10283,8 @@ __metadata:
     "@jupyterlab/application": ^4.5.0
     "@jupyterlab/builder": ^4.5.0
     "@jupyterlab/testutils": ^4.5.0
-    "@jupyterlite/cockle": ^1.5.0
-    "@jupyterlite/terminal": ^1.4.0
+    "@jupyterlite/cockle": ^1.5.1
+    "@jupyterlite/terminal": ^1.4.1
     "@types/jest": ^29.2.0
     "@types/json-schema": ^7.0.11
     "@types/react": ^18.0.26
