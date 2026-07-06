@@ -192,7 +192,7 @@ With the watch command running, every saved change will immediately be built loc
 By default, the `jlpm build` command generates the source maps for this extension to make it easier to debug using the browser dev tools. To also generate source maps for the JupyterLab core extensions, you can run the following command:
 
 ```bash
-jupyter lab build --minimize=False
+jupyter-builder build --minimize=False
 ```
 
 ### Development uninstall

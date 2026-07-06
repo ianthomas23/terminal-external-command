@@ -31,7 +31,6 @@ jobs:
       - name: Build and install the extension
         run: |
           python -m pip install .
-          jupyter labextension develop --overwrite .
 
       - name: List installed packages
         run: |
