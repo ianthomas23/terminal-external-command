@@ -99,6 +99,10 @@
         "extension": true,
         "outputDir": "terminal_external_command/labextension",
         "sharedPackages": {
+            "@jupyterlite/cockle": {
+                "bundled": false,
+                "singleton": true
+            },
             "@jupyterlite/terminal": {
                 "bundled": false,
                 "singleton": true
